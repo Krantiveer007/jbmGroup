@@ -97,6 +97,7 @@ export class AppComponent implements OnInit {
       valueAxis.renderer.line.stroke = series.stroke;
       valueAxis.renderer.labels.template.fill = series.stroke;
       valueAxis.renderer.grid.template.disabled = true;
+      valueAxis.title.text = name;
     }
 
     createAxisAndSeries("noOfPerson", "Number of persons in front of webcam");
